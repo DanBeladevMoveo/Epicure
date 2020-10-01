@@ -1,0 +1,31 @@
+.popular-title {
+  color: black;
+  text-align: center;
+  letter-spacing: 1.25px;
+  font-family: Helvetica;
+  font-size: 30px;
+}
+
+.resturants-container {
+  justify-content: center;
+}
+
+.all-resturants {
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: flex-end;
+    margin-top: 10px;
+    width: 80%;
+  .all-label {
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: black;
+    margin:5px
+  }
+  .arrows {
+    width: 24px;
+    height: 18px;
+    margin: 2px;
+  }
+}

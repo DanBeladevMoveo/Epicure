@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  width: 781px;
+  height: 222px;
+  background-color: rgba(255, 255, 255, 0.88);
+  padding-bottom: 25px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    .title {
+      font-family: HelveticaNeue;
+      font-size: 35px;
+      font-weight: 100;
+      letter-spacing: 1.97px;
+      text-align: center;
+      color: black;
+    }
+    .search-container {
+      align-self: center;
+    }
+  }
+}
