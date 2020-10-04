@@ -12,20 +12,15 @@
       ></app-resturant>
     </div>
     <div class="all-resturants" fxLayout="row">
-      <!-- <span class="all-label">All Resturants</span>
-      <img
-        src="../../../assets/all-restaurants-arrows.svg"
-        alt=""
-        class="arrows"
-      /> -->
       <button class="btn">All Resturants >></button>
     </div>
   </div>
 </div>
-
-<p class="popular-title">SIGNATURE DISH OF :</p>
-<div class="dishes-container" fxLayout="row" fxFlexAlign="center center">
-  <app-dish *ngFor="let dish of dishes" [data]="dish"></app-dish>
+<div class="dishes">
+  <p class="popular-title">SIGNATURE DISH OF :</p>
+  <div class="dishes-container" fxLayout="row" fxFlexAlign="center center">
+    <app-dish *ngFor="let dish of dishes" [data]="dish"></app-dish>
+  </div>
 </div>
-<app-details></app-details>
-<app-cheff></app-cheff>
+  <app-details></app-details>
+  <app-cheff></app-cheff>

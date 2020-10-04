@@ -1,44 +1,61 @@
-.popular-title {
-  color: black;
-  text-align: center;
-  letter-spacing: 1.25px;
-  font-family: Helvetica;
-  font-size: 30px;
-}
+.resturants {
+  padding: 50px;
+  .popular-title {
+    color: black;
+    text-align: center;
+    letter-spacing: 1.25px;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+  }
 
-.resturants-container {
-  justify-content: center;
-}
+  .resturants-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-.all-resturants {
+  .all-resturants {
     margin-top: 10px;
     justify-content: flex-end;
     width: 90%;
-  .all-label {
-    font-family: HelveticaNeue;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: black;
-    margin:5px
+    .all-label {
+      font-family: HelveticaNeue;
+      font-size: 30px;
+      letter-spacing: 2px;
+      color: black;
+      margin: 5px;
+    }
+    .arrows {
+      width: 24px;
+      height: 18px;
+      margin: 2px;
+    }
+    .btn {
+      font-family: HelveticaNeue;
+      font-size: 30px;
+      letter-spacing: 2px;
+      background: none;
+      color: black;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline: inherit;
+    }
   }
-  .arrows {
-    width: 24px;
-    height: 18px;
-    margin: 2px;
-  }
-  .btn {
-    font-family: HelveticaNeue;
-    font-size: 30px;
-    letter-spacing: 2px;
-  background: none;
-  color: black;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
-}
+
+
 }
 
-.dishes-container {
+.dishes {
+padding: 50px;
+    .popular-title {
+      color: black;
+      text-align: center;
+      letter-spacing: 1.25px;
+      font-family: HelveticaNeue;
+      font-size: 30px;
+    }
+  .dishes-container {
     justify-content: center;
+    flex-wrap: wrap;
+  }
 }
