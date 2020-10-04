@@ -1,10 +1,11 @@
+$tablet: 769px;
 .container {
     display: flex;
     justify-content: center;
   position: absolute;
   top: 30%;
   left: 27%;
-  width: 781px;
+  width: 40%;
   height: 222px;
   background-color: rgba(255, 255, 255, 0.88);
   padding-bottom: 25px;
@@ -23,6 +24,26 @@
     }
     .search-container {
       align-self: center;
+    }
+  }
+}
+
+@media (max-width: $tablet){
+  .container{
+    .content{
+      .title {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .container{
+    .content{
+      .title {
+        font-size: 18px;
+      }
     }
   }
 }
