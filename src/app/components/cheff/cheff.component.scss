@@ -1,6 +1,6 @@
 .container {
-    padding: 100px;
-    .title {
+    padding: 70px 200px ;
+        .title {
         font-family: HelveticaNeue;
         font-size: 30px;
         letter-spacing: 2px;
@@ -37,6 +37,20 @@
         }
         .images {
             flex-wrap: wrap;
+        }
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        .cheff{
+            .cheff-image{
+                width: 280px;
+                height: 280px;
+            }
+            .cheff-description {
+                width: 100%;
+            }
         }
     }
 }

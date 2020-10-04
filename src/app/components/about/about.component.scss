@@ -4,13 +4,13 @@
   opacity: 0.9;
   background-color: #fafafa;
   display: flex;
-  padding: 60px;
+  padding-left: 200px ;
   margin-top: 20px;
   .image-wraper {
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 60%;
+    height: 50%;
     align-items: center;
     .epicure {
       width: 178px;
@@ -40,6 +40,7 @@
     .platforms {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 450px;
       .platform {
         padding: 8px;
@@ -64,6 +65,44 @@
         .platform-label .text-style-1 {
           font-size: 13.2px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px ){
+  .container{
+    padding:0;
+    .content {
+      .description{ 
+      font-size: 15px;}
+      .platforms{
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .image-wraper{
+      width: 20%;
+      height: 20%;
+      .epicure {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px ){
+  .container{
+    padding: 30px 100px;
+    .content {
+      .description{ 
+      font-size: 15px;}
+    }
+    .image-wraper{
+      .epicure {
+        width: 100px;
+        height: 100px;
       }
     }
   }
