@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
 .container {
   position: relative;
   height: 34px;
@@ -16,3 +18,36 @@
     width: 22px;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    .search {
+      width: 300px;
+    }
+    .search-logo {
+      display: none;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .container {
+    .search {
+      width: 90px;
+    }
+    .search-logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-desktop) {
+  .container {
+    .search {
+      width: 150px;
+    }
+    .search-logo {
+      display: none;
+    }
+  }
+}
+
