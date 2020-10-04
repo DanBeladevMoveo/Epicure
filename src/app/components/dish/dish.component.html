@@ -1,8 +1,10 @@
-<div style="border: 2px solid black;">
-    <h3>{{data.resturant}}</h3>
+<div class="container">
+    <h3 class="res-name">{{data.resturant}}</h3>
     <img src="{{data.url}}" alt="" class="image">
-    <h2>{{data.name}}</h2>
-    <p>{{data.description}}</p>
-    <img src="{{data.icon}}" alt="" class="spice">
-    <span>{{data.price | currency}}</span>
+    <div class="content">
+        <h2 class="dish-name">{{data.name}}</h2>
+        <p class="description">{{data.description}}</p>
+        <img src="{{data.icon}}" alt="" class="spice" *ngIf="data.icon">
+        <span class="price">{{data.price | currency}}</span>
+    </div>
 </div>

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
+import CheffResturants from '../mocks/cheff-resturants';
+
 import Dishes from '../mocks/dishes';
 import Resturants from '../mocks/resturants';
 
@@ -16,5 +18,9 @@ export class AppService {
   }
   getDishes() {
     return of(Dishes);
+  }
+
+  getCheffResturants() {
+    return of(CheffResturants)
   }
 }

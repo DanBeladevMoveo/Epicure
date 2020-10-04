@@ -10,6 +10,11 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 import { RecommendationsComponent } from './components/recommendations/recommendations.component';
 import { ResturantComponent } from './components/resturant/resturant.component';
 import { DishComponent } from './components/dish/dish.component';
+import { DetailsComponent } from './components/details/details.component';
+import { CheffComponent } from './components/cheff/cheff.component';
+import { CheffResturantComponent } from './components/cheff-resturant/cheff-resturant.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +24,12 @@ import { DishComponent } from './components/dish/dish.component';
     SearchBoxComponent,
     RecommendationsComponent,
     ResturantComponent,
-    DishComponent
+    DishComponent,
+    DetailsComponent,
+    CheffComponent,
+    CheffResturantComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

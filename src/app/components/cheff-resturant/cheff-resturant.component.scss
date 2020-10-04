@@ -1,0 +1,22 @@
+.container {
+      width: 231px;
+    height: 357px;
+    background-color: #f9f4ea;
+    margin: 5px;
+  .image {
+    width: 231px;
+    height: 224px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .res-name {
+      font-family: HelveticaNeue;
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: black;
+    }
+  }
+}

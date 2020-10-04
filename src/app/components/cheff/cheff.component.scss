@@ -1,0 +1,38 @@
+.container {
+    padding: 120px;
+    .title {
+        font-family: HelveticaNeue;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: black;
+    }
+    .cheff {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .cheff-image {
+            width: 433px;
+            height: 338px;
+        }
+        .cheff-description {
+            font-family: HelveticaNeue;
+            font-size: 25px;
+            letter-spacing: 1.08px;
+            text-align: justify;
+            color: black;
+            width: 50%;
+        }
+    }
+    .wraper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        .resturants-label {
+                font-family: HelveticaNeue;
+                font-size: 30px;
+                letter-spacing: 1.29px;
+                color: black;
+        }
+    }
+}

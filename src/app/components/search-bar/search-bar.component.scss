@@ -1,7 +1,7 @@
 .container {
   position: relative;
+  height: 34px;
   .search {
-    height: 34px;
     width: 415px;
     border-radius: 4px;
     padding: 7px 16px;
@@ -10,7 +10,7 @@
   }
   .search-logo {
     position: absolute;
-    top: 13px;
+    top: 5px;
     right: 5px;
     height: 22px;
     width: 22px;

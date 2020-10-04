@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="title">CHEFF OF THE WEEK :</h1>
+  <div class="cheff">
+    <img src="/assets/group-15.png" alt="" class="cheff-image" />
+    <P class="cheff-description"
+      >Chef Yossi Shitrit has been living and breathing his culinary dreams for
+      more than two decades, including running the kitchen in his first
+      restaurant, the fondly-remembered Violet, located in Moshav Udim.
+      Shitrit's creativity and culinary acumen born of long experience are
+      expressed in the every detail of each and every dish.</P
+    >
+  </div>
+  <div class="wraper">
+      <span class="resturants-label">Yossi's resturants :</span>
+      <div class="images" fxLayout="row">
+          <app-cheff-resturant *ngFor="let res of resturants"  [data]="res"></app-cheff-resturant>
+        </div>
+    </div>
+</div>

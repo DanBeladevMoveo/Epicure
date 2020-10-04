@@ -1,0 +1,57 @@
+.container {
+  width: 360px;
+  height: 654px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .res-name {
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    letter-spacing: 1.77px;
+    text-align: center;
+    color: black;
+  }
+
+  .image {
+    width: 100%;
+    height: 290px;
+  }
+  .content {
+    opacity: 0.7;
+    background-color: rgba(232, 196, 122, 0.2);
+    text-align: center;
+    height: 364px;
+    align-items: center;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+
+    .dish-name {
+      font-family: HelveticaNeue;
+      font-size: 38.4px;
+      letter-spacing: 2.56px;
+      text-align: center;
+      color: black;
+    }
+    .description {
+      font-family: HelveticaNeue;
+      font-size: 24px;
+      letter-spacing: 1.6px;
+      text-align: center;
+      color: black;
+    }
+
+    .spice {
+      width: 39px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
+    .price {
+      font-family: HelveticaNeue;
+      font-size: 24.9px;
+      letter-spacing: 1.66px;
+      color: black;
+    }
+  }
+}

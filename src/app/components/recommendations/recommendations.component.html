@@ -1,20 +1,31 @@
-<p class="popular-title">THE POPULAR RESTAURANTS IN EPICURE :</p>
-<div class="resturants-container" fxLayout="row" fxFlexAlign="center center">
-  <app-resturant
-    *ngFor="let resturant of resturants"
-    [data]="resturant"
-  ></app-resturant>
-</div>
-<div class="all-resturants" fxLayout="row" fxFlexAlign="end" fxFill>
-  <span class="all-label">All Resturants</span>
-  <img
-    src="../../../assets/all-restaurants-arrows.svg"
-    alt=""
-    class="arrows"
-  />
+<div class="resturants">
+  <p class="popular-title">THE POPULAR RESTAURANTS IN EPICURE :</p>
+  <div class="wrapper">
+    <div
+      class="resturants-container"
+      fxLayout="row"
+      fxFlexAlign="center center"
+    >
+      <app-resturant
+        *ngFor="let resturant of resturants"
+        [data]="resturant"
+      ></app-resturant>
+    </div>
+    <div class="all-resturants" fxLayout="row">
+      <!-- <span class="all-label">All Resturants</span>
+      <img
+        src="../../../assets/all-restaurants-arrows.svg"
+        alt=""
+        class="arrows"
+      /> -->
+      <button class="btn">All Resturants >></button>
+    </div>
+  </div>
 </div>
 
 <p class="popular-title">SIGNATURE DISH OF :</p>
-<div class="dishes-container">
+<div class="dishes-container" fxLayout="row" fxFlexAlign="center center">
   <app-dish *ngFor="let dish of dishes" [data]="dish"></app-dish>
 </div>
+<app-details></app-details>
+<app-cheff></app-cheff>
