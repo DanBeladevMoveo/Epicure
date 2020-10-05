@@ -1,36 +1,33 @@
+@import '/src/styles/functions.scss';
 .header-container {
-    background-color: white;
-    height: 53px;
-    .left-container {
-        min-width: 20%;
-        .logo {
-            height: 33px;
-            width: 33px;
-            object-fit: contain;
-        }
-        .name {
-            font-family: HelveticaNeue;
-            font-size: 27px;
-            font-weight: 100;
-            letter-spacing: 1.35px;
-            color: black;
-        }
-        .label {
-            font-family: HelveticaNeue;
-    font-size: 18px;
-    font-weight: 100;
-        }
+  background-color: white;
+  height: 53px;
+  .left-container {
+    min-width: 20%;
+    .logo {
+      height: 33px;
+      width: 33px;
+      object-fit: contain;
     }
+    .name {
+      @include epicureFont(27px, center, 1.35px);
+      font-weight: 100;
+    }
+    .label {
+      @include epicureFont(18px, justify, 1px);
+      font-weight: 100;
+    }
+  }
 
-    .right-container {
-        width: 30%;
-        .bag-logo {
-            width: 22px;
-            height: 22px;
-        }
-        .user-logo {
-            width: 23px;
-            height: 23px;
-        }
+  .right-container {
+    width: 30%;
+    .bag-logo {
+      width: 22px;
+      height: 22px;
     }
+    .user-logo {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }

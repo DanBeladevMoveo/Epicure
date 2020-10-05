@@ -1,7 +1,9 @@
+@import '/src/styles/functions.scss';
+@import '/src/styles/colors.scss';
 .container {
   width: 360px;
   height: 357px;
-  background-color: #f9f4ea;
+  background-color: $secondary-color;
   margin: 3px;
   .image {
     width: 360px;
@@ -13,18 +15,10 @@
     margin-top: 20px;
 
     .res-name {
-      font-family: HelveticaNeue;
-      font-size: 40px;
-      letter-spacing: 2.67px;
-      text-align: center;
-      color: black;
+      @include epicureFont(40px,center, 2.67px);
     }
     .cheff-name {
-      font-size: 25px;
-      font-family: HelveticaNeue;
-      letter-spacing: 1.67px;
-      text-align: center;
-      color: black;
+      @include epicureFont(25px,center, 1.67px);
     }
   }
 }

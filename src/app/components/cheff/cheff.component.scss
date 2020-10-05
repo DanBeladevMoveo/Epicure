@@ -1,11 +1,8 @@
+@import '/src/styles/functions.scss';
 .container {
     padding: 70px 200px ;
         .title {
-        font-family: HelveticaNeue;
-        font-size: 30px;
-        letter-spacing: 2px;
-        text-align: center;
-        color: black;
+            @include epicureFont(30px,center,2px);
     }
     .cheff {
         display: flex;
@@ -17,11 +14,7 @@
             height: 338px;
         }
         .cheff-description {
-            font-family: HelveticaNeue;
-            font-size: 25px;
-            letter-spacing: 1.08px;
-            text-align: justify;
-            color: black;
+            @include epicureFont(25px,justify,1.08px);
             width: 50%;
         }
     }
@@ -30,10 +23,7 @@
         flex-direction: column;
         margin-top: 35px;
         .resturants-label {
-                font-family: HelveticaNeue;
-                font-size: 30px;
-                letter-spacing: 1.29px;
-                color: black;
+            @include epicureFont(30px,justify,1.29px);
         }
         .images {
             flex-wrap: wrap;

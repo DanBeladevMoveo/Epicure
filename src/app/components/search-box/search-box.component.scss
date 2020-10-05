@@ -1,3 +1,4 @@
+@import '/src/styles/functions.scss';
 $tablet: 769px;
 .container {
     display: flex;
@@ -10,17 +11,12 @@ $tablet: 769px;
   background-color: rgba(255, 255, 255, 0.88);
   padding-bottom: 25px;
   .content {
-    display: flex;
+    @include AlignCenter();
     flex-direction: column;
-    justify-content: center;
     width: 85%;
     .title {
-      font-family: HelveticaNeue;
-      font-size: 35px;
+      @include epicureFont(35px, center, 1.97px);
       font-weight: 100;
-      letter-spacing: 1.97px;
-      text-align: center;
-      color: black;
     }
     .search-container {
       align-self: center;

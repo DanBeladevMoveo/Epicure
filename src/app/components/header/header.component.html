@@ -7,15 +7,19 @@
     class="left-container"
     fxLayout="row"
     fxLayoutAlign="space-around center"
+    fxFlex="25"
   >
-    <img src="../../../assets/logo.png" class="logo" />
-    <span class="name">EPICURE</span>
+    <img src="/assets/logo.png" class="logo" />
+    <span class="name" fxHide.lt-md>EPICURE</span>
     <span class="label">Resturants</span>
     <span class="label">Chefs</span>
   </div>
-  <div class="right-container" fxLayout="row" fxLayoutAlign="space-between center">
-      <app-search-bar></app-search-bar>
-      <img src="../../../assets/bag-icon.svg" class="bag-logo"/>
-      <img src="../../../assets/user-icon.svg" class="user-logo"/>
+  <div class="right-container" 
+  ngClass.xs="mobile"
+  fxLayout="row" fxLayoutAlign="space-between center" fxFlex="35">
+      <app-search-bar fxHide.lt-md></app-search-bar>
+      <img src="/assets/bag-icon.svg" class="bag-logo" />
+      <img src="/assets/user-icon.svg" class="user-logo" />
   </div>
 </div>
+

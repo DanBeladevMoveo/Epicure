@@ -1,0 +1,22 @@
+@mixin epicureFont( $fontSize, $align ,$letterSpacing, $fontFamily:HelveticaNeue, $color:"black") {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    text-align: $align;
+    letter-spacing: $letterSpacing;
+    color: $color;
+}
+
+@mixin buttonStyle($fontSize, $align ,$letterSpacing, $fontFamily:HelveticaNeue, $color:"black"){
+    @include epicureFont($fontSize,$align, $letterSpacing , $fontFamily, $color);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+@mixin AlignCenter(){
+display: flex;
+justify-content: center;
+align-items: center;
+}

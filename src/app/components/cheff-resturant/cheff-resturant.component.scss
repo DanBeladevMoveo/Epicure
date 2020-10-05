@@ -1,23 +1,20 @@
+@import "/src/styles/functions.scss";
+@import '/src/styles/colors.scss';
 .container {
-      width: 231px;
-    height: 357px;
-    background-color: #f9f4ea;
-    margin: 5px;
+  width: 231px;
+  height: 357px;
+  background-color: $secondary-color;
+  margin: 5px;
   .image {
     width: 231px;
     height: 224px;
   }
   .footer {
-    display: flex;
-    justify-content: center;
+    @include AlignCenter();
     margin-top: 20px;
     .res-name {
-      font-family: HelveticaNeue;
-      font-size: 30px;
-      letter-spacing: 2px;
-      text-align: center;
+      @include epicureFont(30px, center, 2px);
       font-weight: bold;
-      color: black;
     }
   }
 }

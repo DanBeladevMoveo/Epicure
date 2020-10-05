@@ -1,17 +1,13 @@
+@import "/src/styles/functions.scss";
 .container {
   width: 360px;
   min-height: 654px;
   margin: 5px;
-  display: flex;
-  justify-content: center;
+  @include AlignCenter();
   flex-direction: column;
   .res-name {
-    font-family: HelveticaNeue;
-    font-size: 30px;
+    @include epicureFont(30px, center, 1.77px);
     font-weight: bold;
-    letter-spacing: 1.77px;
-    text-align: center;
-    color: black;
   }
 
   .image {
@@ -30,18 +26,10 @@
     justify-content: space-around;
 
     .dish-name {
-      font-family: HelveticaNeue;
-      font-size: 38.4px;
-      letter-spacing: 2.56px;
-      text-align: center;
-      color: black;
+      @include epicureFont(38.4px, center, 2.56px);
     }
     .description {
-      font-family: HelveticaNeue;
-      font-size: 24px;
-      letter-spacing: 1.6px;
-      text-align: center;
-      color: black;
+      @include epicureFont(24px, center, 1.6px);
     }
     .footer {
       display: flex;
@@ -53,10 +41,7 @@
         margin-bottom: 5px;
       }
       .price {
-        font-family: HelveticaNeue;
-        font-size: 24.9px;
-        letter-spacing: 1.66px;
-        color: black;
+        @include epicureFont(24.9px, justify, 1.66px);
       }
     }
   }
