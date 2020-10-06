@@ -29,3 +29,14 @@
     }
   }
 }
+
+@media (max-width: 450px){
+  .container{
+    .icons{
+      .icon-description {
+        margin:10px;
+        align-items: center;
+      }
+    }
+  }
+}

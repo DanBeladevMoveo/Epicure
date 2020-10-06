@@ -1,25 +1,16 @@
-<div
-  class="header-container"
-  fxLayout="row"
-  fxLayoutAlign="space-around center"
->
-  <div
-    class="left-container"
-    fxLayout="row"
-    fxLayoutAlign="space-around center"
-    fxFlex="25"
-  >
+<div class="header-container">
+  <div class="left-container">
     <img src="/assets/logo.png" class="logo" />
-    <span class="name" fxHide.lt-md>EPICURE</span>
-    <span class="label">Resturants</span>
-    <span class="label">Chefs</span>
+    <span fxHide.lt-md class="name">EPICURE</span>
+    <button class="label">Resturants</button>
+    <button class="label">Cheffs</button>
   </div>
-  <div class="right-container" 
-  ngClass.xs="mobile"
-  fxLayout="row" fxLayoutAlign="space-between center" fxFlex="35">
-      <app-search-bar fxHide.lt-md></app-search-bar>
-      <img src="/assets/bag-icon.svg" class="bag-logo" />
-      <img src="/assets/user-icon.svg" class="user-logo" />
+  <div
+    class="right-container"
+  >
+    <app-search-bar fxHide.lt-md></app-search-bar>
+    <img fxHide.gt-md src="/assets/search-icon.svg" class="user-logo" />
+    <img src="/assets/user-icon.svg" class="user-logo" />
+    <img src="/assets/bag-icon.svg" class="bag-logo" />
   </div>
 </div>
-

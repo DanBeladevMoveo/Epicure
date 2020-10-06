@@ -18,6 +18,11 @@ $breakpoint-desktop: 900px;
     width: 22px;
   }
 }
+@media (max-width: 450px) {
+  .container {
+    display: none;
+  }
+}
 
 @media (max-width: 600px) {
   .container {
@@ -50,4 +55,3 @@ $breakpoint-desktop: 900px;
     }
   }
 }
-

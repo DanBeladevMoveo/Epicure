@@ -31,6 +31,27 @@
     }
 }
 
+@media (max-width: 450px) {
+    .container {
+     padding: 10px;
+     .cheff {
+         padding: 35px;
+         .cheff-description {
+             padding: 10px;
+         }
+     }
+     .wraper {
+        .resturants-label {
+            text-align: center;
+        }
+        .images {
+            justify-content: center;
+        }
+       
+    }
+    }
+  }
+
 @media(max-width: 650px){
     .container{
         .cheff{

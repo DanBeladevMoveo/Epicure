@@ -1,9 +1,15 @@
-@import '/src/styles/functions.scss';
+@import "/src/styles/functions.scss";
 .header-container {
   background-color: white;
   height: 53px;
+  display: grid;
+  grid-template-columns: 10% 20% 30% 30% 10%;
+  align-items: center;
   .left-container {
-    min-width: 20%;
+    grid-area: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .logo {
       height: 33px;
       width: 33px;
@@ -14,13 +20,16 @@
       font-weight: 100;
     }
     .label {
-      @include epicureFont(18px, justify, 1px);
+      @include buttonStyle(18px, justify, 1px);
       font-weight: 100;
     }
   }
 
   .right-container {
-    width: 30%;
+    grid-area: 1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .bag-logo {
       width: 22px;
       height: 22px;
@@ -31,3 +40,4 @@
     }
   }
 }
+
