@@ -1,0 +1,81 @@
+@import "/src/styles/functions.scss";
+.container {
+  width: 608px;
+  background-color: #ffffff;
+
+  .image {
+    width: 100%;
+    height: 292px;
+    object-fit: cover;
+  }
+  .content {
+    height: 789px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .des-wrapper {
+      text-align: center;
+      margin-top: 27px;
+      position: relative;
+      .spice {
+        position: absolute;
+        top: 10px;
+        right: 100%;
+        width: 28.9px;
+        height: 18.7px;
+      }
+      .name {
+        @include epicureFont(35px, center, 2.33px);
+        font-weight: 100;
+      }
+      .description {
+        @include epicureFont(14px, center, 0.93px);
+        font-weight: 100;
+        width: 233.2px;
+        height: 51px;
+        margin-top: 14px;
+      }
+
+      .price {
+        @include epicureFont(24px, center, 1.03px);
+        margin-top: 14px;
+      }
+    }
+    .subtitle {
+      @include epicureFont(20.4px, center, 1.46px);
+      text-decoration: underline;
+      text-decoration-color: rgba(222, 146, 0, 0.9);
+    }
+    .radios,
+    .check-boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 35%;
+      height: 70px;
+    }
+    .amount {
+      position: relative;
+      .quantity {
+          @include epicureFont(18px,normal,normal);
+          font-weight: 100;
+      }
+      .plus {
+        position: absolute;
+        left: 50px;
+      }
+    }
+    .add {
+      @include buttonStyle(19px, center, 1.08);
+      width: 206px;
+      height: 53px;
+      border-radius: 2.1px;
+      background-color: black;
+      color: white;
+      margin-bottom: 27px;
+    }
+  }
+}

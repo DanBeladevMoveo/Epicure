@@ -22,7 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MenuComponent } from './components/menu/menu.component';
 import { BigSearchBarComponent } from './components/big-search-bar/big-search-bar.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import { DishDetailsComponent } from './components/dish-details/dish-details.component';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,13 +45,16 @@ import { DishDetailsComponent } from './components/dish-details/dish-details.com
     SideNavComponent,
     MenuComponent,
     BigSearchBarComponent,
-    DishDetailsComponent
+    DishDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

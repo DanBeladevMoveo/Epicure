@@ -1,1 +1,31 @@
-<p>dish-details works!</p>
+<div class="container">
+  <!-- <img src="/assets/x.svg" alt="" class="x" /> -->
+  <img src="{{ data.url }}" alt="" class="image" />
+  <div class="content">
+      <div class="des-wrapper">
+    <img src="{{ data.icon }}" class="spice" *ngIf="data.icon" />
+    <span class="name">{{ data.name }}</span>
+      <p class="description">
+        {{ data.description }}
+      </p>
+      <span class="price">{{ data.price | currency }}</span>
+    </div>
+    <span class="subtitle">Choose a side</span>
+    <section class="radios">
+      <mat-radio-button value="1">White Bread</mat-radio-button>
+      <mat-radio-button value="2">Sticky Rice</mat-radio-button>
+    </section>
+    <span class="subtitle">Changes</span>
+    <section class="check-boxes">
+      <mat-checkbox class="example-margin">Without Peanuts</mat-checkbox>
+      <mat-checkbox class="example-margin">Less Spicy</mat-checkbox>
+    </section>
+
+    <span class="subtitle">Quantity</span>
+    <div class="amount">
+      <label class="quantity">1</label>
+      <img src="/assets/plus.svg" class="plus" />
+    </div>
+    <button class="add">ADD TO BAG</button>
+  </div>
+</div>

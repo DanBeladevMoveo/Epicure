@@ -2,6 +2,7 @@
 @import "/src/styles/layout.scss";
 .container {
   padding: 70px 200px;
+  text-align: center;
   .title {
     @include epicureFont(30px, center, 2px);
   }

@@ -15,7 +15,7 @@
     margin-top: 20px;
     .res-name {
       @include epicureFont(30px, center, 2px);
-      font-weight: bold;
+      font-weight: 100;
     }
   }
 }

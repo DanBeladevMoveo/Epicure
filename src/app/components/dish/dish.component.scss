@@ -8,7 +8,7 @@
   flex-direction: column;
   .res-name {
     @include epicureFont(30px, center, 1.77px);
-    font-weight: bold;
+    font-weight: 100;
   }
 
   .image {
