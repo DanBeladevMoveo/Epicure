@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MenuComponent } from './components/menu/menu.component';
 import { BigSearchBarComponent } from './components/big-search-bar/big-search-bar.component';
+import { DishDetailsComponent } from './components/dish-details/dish-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { BigSearchBarComponent } from './components/big-search-bar/big-search-ba
     ButtonsComponent,
     SideNavComponent,
     MenuComponent,
-    BigSearchBarComponent
+    BigSearchBarComponent,
+    DishDetailsComponent
   ],
   imports: [
     BrowserModule,
