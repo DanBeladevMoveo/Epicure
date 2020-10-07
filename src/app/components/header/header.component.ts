@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MenuComponent } from 'src/app/component/menu/menu.component';
+import { MenuComponent } from 'src/app/components/menu/menu.component';
 import { isMobile } from 'src/utils';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 @Component({
   selector: 'app-header',

@@ -20,7 +20,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
-import { MenuComponent } from './component/menu/menu.component';
+import { MenuComponent } from './components/menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
