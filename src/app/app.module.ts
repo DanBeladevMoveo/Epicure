@@ -15,6 +15,12 @@ import { CheffComponent } from './components/cheff/cheff.component';
 import { CheffResturantComponent } from './components/cheff-resturant/cheff-resturant.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MenuComponent } from './component/menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,11 +35,17 @@ import { ContactComponent } from './components/contact/contact.component';
     CheffComponent,
     CheffResturantComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    ButtonsComponent,
+    SideNavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

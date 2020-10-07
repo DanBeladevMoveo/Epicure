@@ -1,5 +1,6 @@
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 900px;
+@import '/src/styles/layout.scss';
+$tablet: 768px;
+$desktop: 900px;
 .container {
   position: relative;
   height: 34px;
@@ -18,40 +19,44 @@ $breakpoint-desktop: 900px;
     width: 22px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: $mobile) {
   .container {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    .search {
-      width: 300px;
+    height: 33px;
+    padding: 18px 10px 22px 10px;
+    display: flex;
+    justify-content: center;
+    .search{
+      // height: 33px;
+      width: 100%;
+      font-size: 13px;
     }
     .search-logo {
-      display: none;
-    }
-  }
-}
-@media (max-width: $breakpoint-tablet) {
-  .container {
-    .search {
-      width: 90px;
-    }
-    .search-logo {
-      display: none;
+      top: 25px;
+      right: 20px;
+      height: 16px;
+      width: 16px;
     }
   }
 }
 
-@media (max-width: $breakpoint-desktop) {
-  .container {
-    .search {
-      width: 150px;
-    }
-    .search-logo {
-      display: none;
-    }
-  }
-}
+// @media (max-width: $tablet) {
+//   .container {
+//     .search {
+//       width: 90px;
+//     }
+//     .search-logo {
+//       display: none;
+//     }
+//   }
+// }
+
+// @media (max-width: $desktop) {
+//   .container {
+//     .search {
+//       width: 150px;
+//     }
+//     .search-logo {
+//       display: none;
+//     }
+//   }
+// }

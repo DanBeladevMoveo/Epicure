@@ -1,16 +1,26 @@
-<div class="header-container">
+<div class="header-container" fxHide.xs fxShow.gt-xs>
   <div class="left-container">
     <img src="/assets/logo.png" class="logo" />
-    <span fxHide.lt-md class="name">EPICURE</span>
+    <span fxHide.lt-lg class="name">EPICURE</span>
     <button class="label">Resturants</button>
     <button class="label">Cheffs</button>
   </div>
   <div
     class="right-container"
   >
-    <app-search-bar fxHide.lt-md></app-search-bar>
+    <app-search-bar fxHide.lt-lg></app-search-bar>
     <img fxHide.gt-md src="/assets/search-icon.svg" class="user-logo" />
     <img src="/assets/user-icon.svg" class="user-logo" />
     <img src="/assets/bag-icon.svg" class="bag-logo" />
+  </div>
+</div>
+
+<div class="header-mobile" fxHide.gt-xs fxShow.lt-xs>
+  <img src="/assets/group-13.svg" (click)="openDialog()"class="menu" />
+  <img src="/assets/logo.png" class="logo" />
+  <div class="icons">
+    <img fxHide.gt-md src="/assets/search-icon.svg" class="icon" />
+    <img src="/assets/user-icon.svg" class="icon" />
+    <img src="/assets/bag-icon.svg" class="icon" />
   </div>
 </div>

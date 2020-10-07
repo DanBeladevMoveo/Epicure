@@ -41,3 +41,28 @@
   }
 }
 
+.header-mobile {
+  height: 45px;
+  @include AlignCenterWithSpaceBetween();
+  .menu{
+    width: 18px;
+    height: 14px;
+    object-fit: contain;
+    padding: 23px;
+  }
+  .logo {
+    height: 30px;
+    width: 31px;
+    object-fit: contain;
+  }
+  .icons {
+    width: 130px;
+    @include AlignCenterWithSpaceAround();
+    .icon {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      color: black;
+    }
+  }
+}

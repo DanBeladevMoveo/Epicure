@@ -1,67 +1,110 @@
-@import '/src/styles/functions.scss';
+@import "/src/styles/functions.scss";
+@import "/src/styles/layout.scss";
 .container {
-    padding: 70px 200px ;
-        .title {
-            @include epicureFont(30px,center,2px);
+  padding: 70px 200px;
+  .title {
+    @include epicureFont(30px, center, 2px);
+  }
+  .cheff {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    .cheff-image {
+      width: 433px;
+      height: 338px;
     }
-    .cheff {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        .cheff-image {
-            width: 433px;
-            height: 338px;
-        }
-        .cheff-description {
-            @include epicureFont(25px,justify,1.08px);
-            width: 50%;
-        }
-    }
-    .wraper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 35px;
-        .resturants-label {
-            @include epicureFont(30px,justify,1.29px);
-        }
-        .images {
-            flex-wrap: wrap;
-        }
-    }
-}
-
-@media (max-width: 450px) {
-    .container {
-     padding: 10px;
-     .cheff {
-         padding: 35px;
-         .cheff-description {
-             padding: 10px;
-         }
-     }
-     .wraper {
-        .resturants-label {
-            text-align: center;
-        }
-        .images {
-            justify-content: center;
-        }
-       
-    }
+    .cheff-description {
+      @include epicureFont(25px, justify, 1.08px);
+      width: 50%;
     }
   }
-
-@media(max-width: 650px){
-    .container{
-        .cheff{
-            .cheff-image{
-                width: 280px;
-                height: 280px;
-            }
-            .cheff-description {
-                width: 100%;
-            }
-        }
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    .resturants-label {
+      @include epicureFont(30px, justify, 1.29px);
     }
+    .images {
+      flex-wrap: wrap;
+    }
+  }
 }
+
+@media (max-width: $mobile) {
+  .container {
+      margin-top: 71px;
+      padding: 0;
+    .title {
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: 0.93px;
+    }
+    .cheff {
+        justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 16px;
+      .cheff-image {
+        height: 239px;
+        width: 334px;
+      }
+      .cheff-description {
+          margin-top: 21px;
+        width: 80%;
+        font-size: 13.5px;
+        font-weight: 100;
+        letter-spacing: 1.04px;
+      }
+    }
+    .wraper {
+      .resturants-label {
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: 0.8px;
+        margin-left: 14px;
+      }
+      .images {
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+      }
+    }
+  }
+}
+
+// @media (max-width: 450px) {
+//     .container {
+//      padding: 10px;
+//      .cheff {
+//          padding: 35px;
+//          .cheff-description {
+//              padding: 10px;
+//          }
+//      }
+//      .wraper {
+//         .resturants-label {
+//             text-align: center;
+//         }
+//         .images {
+//             justify-content: center;
+//         }
+
+//     }
+//     }
+//   }
+
+// @media(max-width: 650px){
+//     .container{
+//         .cheff{
+//             .cheff-image{
+//                 width: 280px;
+//                 height: 280px;
+//             }
+//             .cheff-description {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }

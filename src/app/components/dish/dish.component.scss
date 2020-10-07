@@ -1,4 +1,5 @@
 @import "/src/styles/functions.scss";
+@import "/src/styles/layout.scss";
 .container {
   width: 360px;
   min-height: 654px;
@@ -48,8 +49,38 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: $mobile) {
   .container {
-  width: fit-content;
+    padding: 0;
+    width: 259.2px;
+    // height: 208.8px;
+    margin-left: 14px;
+    margin-right: 5px;
+    min-height: auto;
+    object-fit: contain;
+    .res-name {
+      font-size: 16px;
+      letter-spacing: 0.94px;
+    }
+    .image {
+      width: 259.2px;
+      height: 208.8px;
+      object-fit: contain;
+    }
+    .content {
+      width: 259.2px;
+      height: 262.1px;
+      opacity: 0.7;
+      background-color: #f7e0b2;
+      padding: 0;
+      .dish-name {
+        font-size: 27.6px;
+    letter-spacing: 1.84px;
+      }
+      .description {
+        font-size: 17.3px;
+    letter-spacing: 1.15px;
+      }
+    }
   }
 }

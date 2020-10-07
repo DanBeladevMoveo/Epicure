@@ -1,5 +1,5 @@
 @import '/src/styles/functions.scss';
-$tablet: 769px;
+@import '/src/styles/layout.scss';
 .container {
     display: flex;
     justify-content: center;
@@ -34,11 +34,21 @@ $tablet: 769px;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: $mobile){
   .container{
+    height: 125px;
+    padding-top: 18px;
+    padding-bottom: 22px;
     .content{
+      width: 100%;
       .title {
-        font-size: 18px;
+        width: 85%;
+        height: 39px;
+        font-size: 16px;
+      }
+      .search-container {
+        height: 33px;
+        width: 100%;
       }
     }
   }

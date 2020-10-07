@@ -40,3 +40,35 @@
     flex-wrap: wrap;
   }
 }
+
+
+@media (max-width: $mobile){
+  .resturants{
+    padding: 51px 0px 0px 0px;
+
+    .popular-title {
+      font-size: 14px;
+      letter-spacing: 0.93px;
+    }
+    .wrapper {
+      .resturants-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+      }
+    }
+  }
+  .dishes{
+    padding: 100px 0px 0px 0px;
+    .popular-title{
+      font-size: 14px;
+      letter-spacing: 0.93px;
+      font-weight: 100;
+    }
+    .dishes-container {
+      overflow-x: scroll;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+  }
+}
