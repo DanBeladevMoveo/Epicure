@@ -21,6 +21,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MenuComponent } from './components/menu/menu.component';
+import { BigSearchBarComponent } from './components/big-search-bar/big-search-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { MenuComponent } from './components/menu/menu.component';
     NavbarComponent,
     ButtonsComponent,
     SideNavComponent,
-    MenuComponent
+    MenuComponent,
+    BigSearchBarComponent
   ],
   imports: [
     BrowserModule,

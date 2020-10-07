@@ -17,6 +17,7 @@
     .title {
       @include epicureFont(35px, center, 1.97px);
       font-weight: 100;
+      width: 437px;
     }
     .search-container {
       align-self: center;
