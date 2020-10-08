@@ -1,10 +1,14 @@
 @import "/src/styles/functions.scss";
 .header-container {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+
   background-color: white;
   height: 53px;
   display: grid;
   grid-template-columns: 5% 25% 25% 40% 5%;
-    align-items: center;
+  align-items: center;
   .left-container {
     grid-area: 1/2;
     display: flex;
@@ -42,9 +46,13 @@
 }
 
 .header-mobile {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
   height: 45px;
   @include AlignCenterWithSpaceBetween();
-  .menu{
+  .menu {
     width: 18px;
     height: 14px;
     object-fit: contain;

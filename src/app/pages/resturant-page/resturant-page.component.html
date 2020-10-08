@@ -1,0 +1,28 @@
+<div class="container">
+    <img src="/assets/claro.png" alt="" class="imag">
+    <div class="resturant-details">
+        <label class="res-name">Claro</label>
+        <label class="cheff-name">Ran Shmueli</label>
+        <div class="time">
+            <img src="" alt="" class="time-icon">
+            <span class="open-label"> Open now</span>
+        </div>
+        <div class="meals">
+            <label class="meal">Breakfast</label>
+            <label class="meal">Lunch</label>
+            <label class="meal">Dinner</label>
+        </div>
+    </div>
+    <div class="all-dishes">
+        <app-dish *ngFor="let dish of dishes" [data]="dish"></app-dish>
+    </div>
+    <div class="lunch-container">
+        <div class="line"></div>
+        <label for="" class="lunch-label">LUNCH</label>
+        <div class="line"></div>
+    </div>
+    <div class="all-dishes">
+        <app-dish *ngFor="let dish of dishes" [data]="dish"></app-dish>
+    </div>
+</div>
+<app-contact></app-contact>

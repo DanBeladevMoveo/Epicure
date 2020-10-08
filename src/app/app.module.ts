@@ -25,6 +25,7 @@ import { BigSearchBarComponent } from './components/big-search-bar/big-search-ba
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { DishDetailsComponent } from './components/dish-details/dish-details.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { ResturantPageComponent } from './pages/resturant-page/resturant-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import {MatRadioModule} from '@angular/material/radio';
     MenuComponent,
     BigSearchBarComponent,
     DishDetailsComponent,
+    ResturantPageComponent,
     
   ],
   imports: [
