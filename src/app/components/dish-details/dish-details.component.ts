@@ -8,13 +8,17 @@ import { Dish } from 'src/models/dish';
   styleUrls: ['./dish-details.component.scss']
 })
 export class DishDetailsComponent implements OnInit {
-
+  quantity: number = 1;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: Dish
  ) { }
 
   ngOnInit(): void {
     console.log(this.data);
+  }
+
+  addOne(){
+    this.quantity = this.quantity+1;
   }
 
 }

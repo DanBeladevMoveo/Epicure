@@ -1,5 +1,5 @@
+<img mat-dialog-close src="/assets/x.svg" alt="" class="x" />
 <div class="container">
-  <!-- <img src="/assets/x.svg" alt="" class="x" /> -->
   <img src="{{ data.url }}" alt="" class="image" />
   <div class="content">
       <div class="des-wrapper">
@@ -23,8 +23,8 @@
 
     <span class="subtitle">Quantity</span>
     <div class="amount">
-      <label class="quantity">1</label>
-      <img src="/assets/plus.svg" class="plus" />
+      <label class="quantity">{{quantity}}</label>
+      <img src="/assets/plus.svg" class="plus" (click)="addOne()"/>
     </div>
     <button class="add">ADD TO BAG</button>
   </div>
