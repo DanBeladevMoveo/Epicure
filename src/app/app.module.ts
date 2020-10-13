@@ -26,6 +26,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { DishDetailsComponent } from './components/dish-details/dish-details.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { ResturantPageComponent } from './pages/resturant-page/resturant-page.component';
+import { ResturantsPageComponent } from './pages/resturants-page/resturants-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +52,8 @@ import { ResturantPageComponent } from './pages/resturant-page/resturant-page.co
     BigSearchBarComponent,
     DishDetailsComponent,
     ResturantPageComponent,
-    
+    ResturantsPageComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,9 @@ import { ResturantPageComponent } from './pages/resturant-page/resturant-page.co
     BrowserAnimationsModule,
     MatDialogModule,
     MatRadioModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

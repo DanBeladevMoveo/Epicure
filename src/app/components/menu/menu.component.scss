@@ -24,12 +24,15 @@
   .all-restaurants-title {
     @include text(111px, 48px);
   }
-  .border {
-    margin-left: 60px;
-    margin-top: 49px;
-    width: 196px;
-    border: solid 0.2px black;
-    opacity: 0.3;
+  .border-container{
+    display: flex;
+    justify-content: center;
+    .border {
+      margin-top: 49px;
+      width: 196px;
+      border: solid 0.2px black;
+      opacity: 0.3;
+    }
   }
   .sign-in-title {
     @include text(154px, 48px);

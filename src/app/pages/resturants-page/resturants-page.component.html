@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="searchbar">
+        <a href="#" class="label">All</a>
+        <a href="#" class="label">New</a>
+        <a href="#" class="label">Most Popular</a>
+        <a href="#" class="label">Open Now</a>
+    </div>
+    <div class="resturnats -container">
+        <app-resturant *ngFor="let resturant of resturants" [data]="resturant"></app-resturant>
+    </div>
+</div>

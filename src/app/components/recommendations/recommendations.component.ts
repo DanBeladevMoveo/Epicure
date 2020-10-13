@@ -12,8 +12,10 @@ export class RecommendationsComponent implements OnInit {
   constructor(private appService: AppService) { }
 
   ngOnInit(): void {
-    this.appService.getResturants().subscribe(res =>{
-      this.resturants = [...res];
+    console.log('on init recommandation');
+    this.appService.getResturants().subscribe(res => {      
+      console.log('home page? ',res);
+      this.resturants = [...res.resturants];
     });
     this.appService.getDishes().subscribe(res =>{
       this.dishes = [...res];
